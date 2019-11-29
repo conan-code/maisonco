@@ -1,0 +1,763 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+*, *::before, *::after {
+    box-sizing: border-box;
+} 
+body {
+    font-family: 'Marcellus SC', serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #9ea0a6;
+    text-align: left;
+    
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-family: 'Marcellus SC', serif;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #3f4448;
+}
+.container-fluid{
+    max-width: 1820px;
+}
+@media (min-width:1200px){
+    .container {
+        max-width: 1290px !important;
+    }
+
+}
+@media(max-width:576px){
+    .container {
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 768px){
+    .container {
+        font-size: 12px;
+    }
+}
+.section-wrapper{
+    padding: 60px 0;
+}
+.box-header{
+    height: 1020px;
+    background-image: url(http://dev.wpopal.com/maisonco/wp-content/uploads/2018/12/slide-home2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.site-header{
+    background: #ffffff;
+}  
+.timeopen {
+    position: absolute;
+    bottom: 25px;
+}
+.timeopen{
+    position: absolute;
+   color: #ffffff;
+   text-transform: uppercase;
+
+}
+.timeopen p{
+    font-weight: bold;
+}
+.navbar-nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-light .navbar-nav .nav-link {
+    padding: 15px 0;
+    color: #3f4448;
+    font-size: 12px;
+    text-transform: uppercase;
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+.navbar-light .navbar-nav .nav-link:hover:after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 40px;
+    background-color: #cabe9f;
+    opacity: 1;
+    bottom: 0;
+    left: 0;
+}
+.mainmenu-container > ul > li:not(:last-child) {
+    margin-right: 60px;
+}
+.btn {
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    border: 2px solid #cabe9f; 
+    border-radius: 0px;
+    font-size: 12px;
+    padding: 20px 25px;
+}
+.header-schedual :hover{
+    color: #fff;
+    background-color: #b8a87f;
+    border-color: #b8a87f;
+    font-size: 12px;
+}
+.header-schedual span{
+    color: #cabe9f;
+    display: inline-block;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.slider-list-detail{
+    position: relative;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 300;
+    width: 100%;
+}
+.slider-content h2{
+    font-size: 72px;
+    font-weight: 400;
+}
+.slider-content h5{
+    font-size: 30px;
+    font-weight: 300;
+}
+.slider-content{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 325px;
+}
+.intro-content .intro-content-2{
+    color: #9ea0a6;
+    font-weight: 400;
+    letter-spacing: 0.35px;
+}
+.property-title a{
+    font-size: 20px;
+    /* color: #ffffff; */
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.entry-content {
+    position: absolute;
+    left: -1px;
+    right: -1px;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 85px;
+    padding-bottom: 55px;
+    max-height: 100%;
+    z-index: 99;
+}
+.entry-content .property-title{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.entry-content .property-title a{
+    font-size: 20px;
+    color: #ffffff;
+}
+.entry-content .link-more a{
+    color: #cabe9f;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 10px;
+}
+.select-room{
+    margin: 40px 0;
+}
+.plan-wrapper{
+    display: flex;
+    margin: 0 -15px;
+}
+.title-plan{
+    font-size: 30px;
+    color: #3f4448;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin: 0 -15px;
+}
+.ul.apartment-list-items {
+    padding: 0;
+}
+.apartment-list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+.gallery{
+    position: relative;
+}
+.gallery-wrap{
+    max-width: 100%;
+    margin: 0 -1px;
+}
+.nav-pills .nav-link{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 2.4px;
+    color: #3f4448;
+    background-color: #f8f8f8;
+    text-align: center;
+    margin: 0px 1px 0px 1px;
+    padding: 20px 0;
+}
+.nav-pills .nav-link.active {
+    color: #fff;
+    background-color: #cabe9f;
+}
+.nav-pills{
+    padding: 20px 0 100px 0;
+}
+.widget-apartment-info .title-list {
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 400;
+    color: #9ea0a6;
+}
+.box-ourteam{
+    border: solid #ebebeb;
+    border-width: 0 1px 0 0;
+    padding: 40px;
+}
+.image-team{
+    margin-bottom: 40px;
+}
+.content-team .job {
+    font-size: 11px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.content-team p{
+
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.title-list {
+    font-size: 13px;
+}
+.button-wrapper a{
+    color: #cabe9f;
+    border-color: #cabe9f;
+    border-radius: 0px;
+    font-size: 12px;
+}
+.button-wrapper{
+    text-align: center;
+    border: 2px solid #cabe9f;
+    padding: 16px;
+}
+.button-wrapper:hover{
+    
+    background-color: #cabe9f;
+    border-color: #cabe9f;
+}
+.button-wrapper a :hover{
+    color: #212529;
+}
+.plan{
+    background-image: url(http://dev.wpopal.com/maisonco/wp-content/uploads/2018/12/bg_h2_1.jpg);
+    background-position: center right;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    padding: 140px 0;
+}
+.options{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #3f4448;
+}
+.widget-wrap{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    max-width: 590px;
+    flex: 1;
+}
+.widget-wrap p{
+    color: #9ea0a6;
+}
+.widget-wrap a{
+    text-decoration: none;
+    color: #b8a87e!important;
+}
+.heading-title{
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #3f4448
+    letter-spacing: 0px;
+}
+.text-editor{
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    color: rgb(158, 160, 166);
+    letter-spacing: 0px;
+    font-family: Montserrat;
+    
+}
+.options-link a{
+    color: #cabe9f !important;
+    letter-spacing: 2px;
+    font-weight: 600;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.services .heading-title{
+    color: #3f4448;
+    text-transform: uppercase;
+    /* margin: 0 15px 45px 14px; */
+}
+.icon-box-icon .icon {
+    font-size: 50px;
+    display: inline-block;
+    flex: 0 0 auto;
+    color: red;
+}
+.icon-list-item{
+    padding: 0px 0px 15px 0px;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.35px;
+    list-style-type: none;
+    display: flex;
+}
+.icon-list-item:hover .icon-list-icon  {
+    border-color: #cabe9f;
+}
+.icon-list-item:hover .icon-list-text {
+    color: #cabe9f;
+}
+.icon-list-icon{
+    min-width: 25px;
+    height: 25px;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: #f8f8f8;
+    border-radius: 50px 50px 50px 50px;
+}
+.icon-list-icon i {
+    font-size: 14px;
+    color: #cabe9f;
+    padding-left: 9px;
+}
+.icon-list-text {
+    padding-left: 15px;
+    color: #3f4448;
+    font-size: 14px;
+    font-weight: 600;
+}
+.fa-angle-right:before {
+    content: "";
+}
+.icon-box-title{
+    color: #3f4448;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 24px;
+    letter-spacing: 0.8px;
+    font-family: 'Marcellus SC', serif;
+}
+.icon .icon{
+    font-size: 40px;
+    color: #cabe9f;
+}
+.icon-box-wrapper{
+    border-bottom: 1px solid#cabe9f;
+    margin-bottom: 30px;
+}
+.icon-box-icon {
+    margin-bottom: 15px;
+}
+.column-1 .widget-container {
+    margin: 0px 0px 60px 0px;
+}
+.column{
+    background-color: #3f4448;
+    background-image: url(http://dev.wpopal.com/maisonco/wp-content/uploads/2018/12/bg-apartment.png);
+}
+.column-2 .heading-title {
+    color: #3f4448;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.flx {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.box-six {
+    background-image: url(../assets/image/bg1.png);
+    margin-bottom: 20px;
+      padding-bottom: 150px;
+     position: relative;
+     padding-top: 150px;
+  }
+.toppic8 {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.toppic8 h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #ffffff;
+}
+.toppic8 h2 {
+    text-transform: uppercase;
+    font-size: 48px;
+    font-weight: 500px;
+    color: #ffffff;
+}
+.toppic8 a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 40px 15px 40px;
+    background-color: #3f4448;    
+}
+.img-team{
+    margin: 0px 0px 40px 0px;
+
+}
+.column-2{
+    background-image: url(http://dev.wpopal.com/maisonco/wp-content/uploads/2018/12/bg_ab2.jpg);
+}
+.content-column-2{
+    width: 100%;
+    position: relative;
+    text-align: center;
+    
+}
+.column-2 .heading-title {
+    font-size: 52px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.content-column-2 {
+    padding: 100px 0;
+    position: relative;
+    width: 100%;
+}
+.title-column-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-column-2{
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.content-column-2 h3{
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    font-size: 50px;
+    color: #ffffff;
+}
+.content-column-2 h2{
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    font-size: 70px;
+    color: #ffffff;
+}
+.content-column-2 a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 40px 15px 40px;
+    background-color: #3f4448;
+}
+.boss-phone i{
+    padding-right: 15px;
+}
+.contact h4 {
+    text-transform: uppercase;
+    color: #cabe9f;
+    font-size: 16px;
+}
+.diachi p {
+    font-size: 13px;
+    color: #ffffff;
+}
+.addr {
+    display: flex;
+}
+.addr span {
+    color: #9ea0a6;
+    font-size: 13px;
+    margin: 0;
+    text-transform: uppercase;
+}
+.addr p{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 0;
+}
+.address p {
+    color: #9ea0a6;
+    padding-right: 30px;
+}
+.address {
+    width: 80px;
+    text-transform: uppercase;
+}
+.boss-profile {
+    display: flex;
+}
+.boss-name h6{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.boss-name p {
+    margin: 0;
+    color: #9ea0a6;
+    text-transform: uppercase;
+    font-size: 11px;
+    
+}
+.boss-name {
+    padding-top: 20px;
+}
+.boss-phone p{
+    color: #ffffff;
+    font-size: 13px;
+}
+.boss hr {
+    border-color: #65696d;
+}
+.dang-nhap {
+    display: flex;
+    justify-content: space-between;
+}
+.yourname {
+    width: 100%;
+    height: 45px;
+    border: 3px solid #cabe9f;
+    padding-left: 15px;
+    background-color: #3f4448;
+
+}
+.yourphone {
+    width: 100%;
+    height: 45px;
+    border: 3px solid #cabe9f;
+    padding-left: 15px;
+    background-color: #3f4448;
+
+}
+.name {
+    width: 48%;
+}
+.phone-ip {
+    width: 48%;
+
+}
+.yourmail {
+    width: 100%;
+    height: 45px;
+    border: 3px solid #cabe9f;
+    padding-left: 15px;
+    background-color: #3f4448;
+
+}
+.notein {
+    width: 100%;
+    height: 70px;
+    border: 3px solid #cabe9f;
+    background-color: #3f4448;
+    padding: 15px;
+}
+.submit {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    background-color: #ffffff;
+    color: #cabe9f;
+    text-transform: uppercase;
+    padding: 15px 0px 15px 0px;
+    font-weight: bold;
+}
+.submit:hover{
+    background-color: #cabe9f;
+    color: #fff;
+}
+.toppic-bot {
+    text-align: center;
+    width: 100%;
+    padding-top: 70px;
+    font-size: 12px;
+    text-transform: uppercase;
+
+}
+.toppic-bot i{
+    font-size: 16px; 
+    letter-spacing: 20px;
+     color: #9ea0a6;
+}
+.Heading-title{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.intro-content-1{
+    color: #3f4448;
+    font-weight: 500;
+    letter-spacing: .35px;
+}
+.text-white {
+    color: #fff!important;
+}
+.gallerry-image {
+    position: relative;
+    
+    display: block;
+    margin-bottom: 10px;
+}
+.gallerry-item{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+}
+.our-team .no-gutter {
+    margin-left: -40px;
+    margin-right: -40px;
+}
+.gallerry-image img{
+    width: 100%;
+}
+.w-lg-50 {
+    width: 50%;
+}
+.box-ten {
+    background-color: #3f4448;
+    padding-bottom: 170px;
+    position: relative;
+}
+.content-slider a{
+    color: #cabe9f;
+}
+.bg-white{
+    background-color: #fff!important;
+    padding: 45px;
+}
+
+ /* style responsive */
+ @media (max-width: 1200px){
+     .navigation-top{
+         width: 100%;
+         flex: 0 0 100%;
+         padding: 20px 0;
+     }
+     .site-header-wrap{
+         padding: 0 15px;
+         flex-wrap: wrap;
+     }
+ }
+ @media (max-width: 1200px){
+     .logo{
+         text-align: center;
+         width: inherit;
+     }
+ }
+ @media (max-width: 992px){
+    .w-lg-50 {
+        width: 75%;
+    }
+ }
+ @media (max-width: 576px){
+    .slider-list-detail .slider-content h2 {
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -1px;
+    }
+}
+@media (max-width: 767px){
+    .slider-list-detail .slider-content h5 {
+        font-size: 12px;
+        line-height: 26px;
+    }
+}
+@media (max-width: 360px){
+    .property {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width:360px){
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .section-wrapper{
+        padding: 30px 0;
+    }
+}
+@media (max-width: 360px){
+    .plan-wrapper{
+        display: block;
+        margin: auto;
+    }
+    .map-wrapper-content{
+        padding-top: 50px;
+    }
+}
+@media (max-width:360px) {
+    .options{
+        display: block;
+        margin: auto;
+    }
+    .content-slider{
+        padding: 20px 0;
+    }
+}
+@media (max-width:360px){
+    .image-team img{
+        width: 100%;
+    }
+}
+@media (max-width:360px ){
+    .content-column-2 h3{
+        font-size: 30px;
+    }
+    .content-column-2 h2{
+        font-size: 25px;
+    }
+}
+@media (max-width: 1024px){
+    .options{
+        padding: 50px 0;
+    }
+}
