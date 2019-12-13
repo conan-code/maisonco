@@ -245,9 +245,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.content-team p{
 
-}
 .img-fluid {
     max-width: 100%;
     height: auto;
@@ -306,7 +304,6 @@ body {
     line-height: 30px;
     font-weight: 400;
     color: #3f4448
-    letter-spacing: 0px;
 }
 .text-editor{
     font-size: 14px;
